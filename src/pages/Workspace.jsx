@@ -100,7 +100,7 @@ const Workspace = () => {
     try {
       setIsLoading(true);
       
-      // Add current user to active users if not already there
+     
       const workspaceRef = doc(db, 'workspaces', wsId);
       
       const userInfo = {
@@ -110,7 +110,7 @@ const Workspace = () => {
         joinedAt: new Date()
       };
       
-      // Check if user already exists in the array to avoid duplicates
+    
       await updateDoc(workspaceRef, {
         activeUsers: activeUsers.some(u => u.uid === user.uid) 
           ? activeUsers 
