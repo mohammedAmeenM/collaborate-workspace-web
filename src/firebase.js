@@ -18,15 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-// Example of creating an Auth Context for your React app
-// This would go in a separate file like authContext.js
-/*
-import React, { createContext, useState, useEffect, useContext } from 'react';
-import { auth } from './firebase';
 
-
-
-*/
 
 export { 
   db, 
