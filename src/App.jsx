@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/workspace" element={<Workspace />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Register />} />
-          {/* Add more routes as needed */}
+
         </Routes>
       </Router>
     </AuthProvider>
