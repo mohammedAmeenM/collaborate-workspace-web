@@ -22,11 +22,11 @@ const Workspace = () => {
     return () => unsubscribe();
   }, []);
 
-  // Join or create workspace
+
   useEffect(() => {
     if (!user) return;
 
-    // Try to get workspace from URL parameter
+ 
     const urlParams = new URLSearchParams(window.location.search);
     const wsId = urlParams.get('id');
 
