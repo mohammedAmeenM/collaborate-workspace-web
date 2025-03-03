@@ -24,11 +24,6 @@ const auth = getAuth(app);
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { auth } from './firebase';
 
-const AuthContext = createContext();
-
-export function useAuth() {
-  return useContext(AuthContext);
-}
 
 
 */
